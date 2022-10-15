@@ -1,5 +1,5 @@
 import './App.css';
-import HiippariRouter from './Router';
+import HiippariRouter from './HiippariRouter';
 
 function App() {
   return (
