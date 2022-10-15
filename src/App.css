@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+  padding: 4px;
+  margin: 0px;
+  font-family: 'Special Elite', cursive;
+  font-weight: 300;
+
+}
+
+.navi {
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +49,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+button {
+  background-color: #101925;
+  border: none;
+  color: white;
+  border-radius: 24px 24px;
+  padding: 17px 37px;
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+}
+
+button:hover {
+  background-color: #0f2e56;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: 0.3s;
+
 }
