@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Laskeutumissivu from './components/Laskeutumissivu';
+import Kirje from './components/Kirje';
 
 import variables from './utils/variables';
 
@@ -25,6 +26,15 @@ export default function HiippariRouter() {
               key={i}
               path={`/${vartio.lpk_lyhenne}/${vartio.tilaus}`}
               element={<Laskeutumissivu vartioData={vartio} />}
+            />
+          );
+        })}
+        {vartiot.map((vartio, i) => {
+          return (
+            <Route
+              key={i}
+              path={`/kirje/${vartio.tilaus}`}
+              element={<Kirje vartioData={vartio} />}
             />
           );
         })}
