@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     width: '100%'
   }
 });
-
 export default function Kirje(props) {
   return (
     <PDFViewer style={{ width: '75%', height: '400px' }}>
