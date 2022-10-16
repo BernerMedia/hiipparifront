@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexFlow: 'column',
     padding: '1%',
-    fontSize: '13px'
+    fontSize: '13px',
+    fontFamily: 'Courier'
   },
   view: {
     width: '90%'
@@ -16,6 +17,9 @@ const styles = StyleSheet.create({
   text: {
     width: '100%',
     marginTop: '3%'
+  },
+  boldText: {
+    fontFamily: 'Courier-Bold'
   }
 });
 export default function Kirje(props) {
@@ -25,9 +29,15 @@ export default function Kirje(props) {
       <Document>
         <Page size="A4" style={styles.page}>
           <View style={styles.view}>
-            <Text>Vartio: {vartio.vartio}</Text>
-            <Text>Lippukunta: {vartio.lpk}</Text>
-            <Text>Kisanumero: {vartio.vartionro}</Text>
+            <Text>
+              Vartio: <Text style={styles.boldText}>{vartio.vartio}</Text>
+            </Text>
+            <Text>
+              Lippukunta: <Text style={styles.boldText}>{vartio.lpk}</Text>
+            </Text>
+            <Text>
+              Kisanumero: <Text style={styles.boldText}>{vartio.vartionro}</Text>
+            </Text>
           </View>
 
           <View style={styles.view}>
@@ -37,12 +47,13 @@ export default function Kirje(props) {
               ohjeita kisaan valmistautumiseen.
             </Text>
             <Text style={styles.text}>
-              Kilpailun lähtö tapahtuu perinteiseen tapaan elokuvateatteri Orionilta osoitteessa
-              Eerikinkatu 15. Vartionne lähtöaika on klo «Lähtöaika». Tulkaa paikalle 15 minuuttia
-              ennen lähtöaikaa.
+              <Text style={styles.boldFont}>Kilpailun lähtö</Text> tapahtuu perinteiseen tapaan
+              elokuvateatteri Orionilta osoitteessa Eerikinkatu 15. Vartionne lähtöaika on klo
+              {vartio.lahtoaika}. Tulkaa paikalle 15 minuuttia ennen lähtöaikaa.
             </Text>
             <Text style={styles.text}>
-              Kilpailun ennakkotehtävät voitte ladata osoitteesta{' '}
+              <Text style={styles.boldFont}>Kilpailun ennakkotehtävät</Text> voitte ladata
+              osoitteesta{' '}
               <Link src="http://hh.ilvesveikot.fi/tiedostot">
                 <Text>hh.ilvesveikot.fi/tiedostot</Text>
               </Link>
@@ -56,20 +67,21 @@ export default function Kirje(props) {
               , muistakaa katsoa sekin!
             </Text>
             <Text style={styles.text}>
-              Kilpailun pukeutumisteema on hirviö. Tulkaa lähtöön pukeutuneena kisa-asuihinne.
-              Kisa-asuissa ollaan koko kisan ajan, joten niiden kannattaa olla myös sään mukaisia.
-              Muistakaa, että asut arvioidaan ja niistä saa pisteitä kilpailussa. Jep, jätesäkki
-              asuna = 0 pistettä.
+              Kilpailun <Text style={styles.boldText}>pukeutumisteema</Text> on hirviö. Tulkaa
+              lähtöön pukeutuneena kisa-asuihinne. Kisa-asuissa ollaan koko kisan ajan, joten niiden
+              kannattaa olla myös sään mukaisia. Muistakaa, että asut arvioidaan ja niistä saa
+              pisteitä kilpailussa. Jep, jätesäkki asuna = 0 pistettä.
             </Text>
             <Text style={styles.text}>
-              Vartionne tulee valmistaa kyltti, jossa näkyy selvästi vartionne numero. Koska
-              pukeutumisteema on hirviö, on reilua, että sitä tasapainotetaan mahdollisimman
-              kauniisti koristellulla kyltillä. Kyltin kirjaimen ja numeroiden on oltava vähintään
-              19,47 cm korkeita. Lisäksi kyltissä pitää lukea jollakin tapaa ja haluamallanne koolla
-              #Hiippari22, tyyli on vapaa.
+              Vartionne tulee valmistaa <Text style={styles.boldText}>kyltti</Text>, jossa näkyy
+              selvästi vartionne numero. Koska pukeutumisteema on hirviö, on reilua, että sitä
+              tasapainotetaan mahdollisimman kauniisti koristellulla kyltillä. Kyltin kirjaimen ja
+              numeroiden on oltava vähintään 19,47 cm korkeita. Lisäksi kyltissä pitää lukea
+              jollakin tapaa ja haluamallanne koolla #Hiippari22, tyyli on vapaa.
             </Text>
             <Text style={styles.text}>
-              Muita ohjeita ja vinkkejä kisapäivään löytyy kisan nettisivuilta:{' '}
+              <Text style={styles.boldText}>Muita ohjeita ja vinkkejä</Text> kisapäivään löytyy
+              kisan nettisivuilta:{' '}
               <Link src="https://hh.ilvesveikot.fi">
                 <Text>hh.ilvesveikot.fi</Text>
               </Link>
