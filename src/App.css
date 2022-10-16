@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 body {
-  padding: 4px;
+  padding: 0px;
   margin: 0px;
   font-family: 'Special Elite', cursive;
   font-weight: 300;
+  background-color: #101925;
 
 }
 
-.navi {
-  text-decoration: none;
+
+h1, h2, h3 {
+  color: white;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -53,9 +71,9 @@ body {
 
 
 button {
-  background-color: #101925;
+  background-color: #ffffff;
   border: none;
-  color: white;
+  color: #101925;
   border-radius: 24px 24px;
   padding: 17px 37px;
   text-align: center;
@@ -72,3 +90,56 @@ button:hover {
   transition: 0.3s;
 
 }
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse; 
+  background-color: #f6f6f6;
+}/* Spacing */
+td, th {
+  border: 1px solid #999;
+  padding: 20px;
+}
+th {
+  background: brown;
+  color: white;
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+.topnav {
+  background-color: #0f2e56;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+}
+
+.topnav a {
+  text-align: center;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  color: #eebc79;
+  border-radius: 8px 8px;
+
+}
+
+.topnav a.active {
+  color: #eebc79;
+  border-radius: 8px 8px;
+}
+
+
+
