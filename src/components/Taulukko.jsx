@@ -4,7 +4,7 @@ export default function Taulukko(props)
  {
     const vartio = props.vartioData
   return (
-<div class="table-wrapper">
+<div>
   <table>
   <tr>
   
@@ -12,20 +12,22 @@ export default function Taulukko(props)
 
   <tr>
     <td>Vartion nimi</td>
-    <td>Jan - April</td>
-    <td>Credit</td>
+    <td>Liskokissat</td>
   </tr>
 
   <tr>
     <td>Lippukunta</td>
-    <td>May - August</td>
-    <td>Pass</td>
+    <td>Puskapartiolaiset</td>
   </tr>
     
   <tr>
     <td>Vartion numero</td>
-    <td>September - December</td>
-    <td>Distinction</td>
+    <td>1340</td>
+  </tr>
+
+  <tr>
+    <td>Lähtöaika</td>
+    <td>8:10</td>
   </tr>
 </table>
 </div>

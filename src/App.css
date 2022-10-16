@@ -91,20 +91,22 @@ button:hover {
 
 }
 table {
-  text-align: left;
+  text-align: center;
   position: relative;
   border-collapse: collapse; 
   background-color: #f6f6f6;
-}/* Spacing */
+  
+}
+
+
+
 td, th {
   border: 1px solid #999;
   padding: 20px;
 }
 th {
-  background: brown;
   color: white;
   border-radius: 0;
-  position: sticky;
   top: 0;
   padding: 10px;
 }
