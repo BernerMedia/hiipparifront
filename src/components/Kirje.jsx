@@ -109,7 +109,7 @@ export default function Kirje(props) {
               Jos teillä vielä jäi kysyttävää, kerromme mielellämme lisää!
             </Text>
             <Text style={styles.text}>Mukavaa valmistautumista kisaan!</Text>
-            <Text style={styles.text}>&lt;3 hh.ilvesveikot.fi</Text>
+            <Text style={styles.text}>&lt;3</Text>
             <Text>HH22 johtoryhmä</Text>
             <Link src="mailto:hiipivahaamu@ilvesveikot.fi">
               <Text>hiipivahaamu@ilvesveikot.fi</Text>

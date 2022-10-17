@@ -3,29 +3,29 @@ import React from 'react';
 export default function Taulukko(props) {
   const vartio = props.vartioData;
   return (
-    <div>
-      <table>
+    <div className="table-container">
+      <table className="taulukko">
         <tbody>
           <tr></tr>
 
           <tr>
             <td>Vartion nimi</td>
-            <td>Liskokissat</td>
+            <td>{vartio.vartio}</td>
           </tr>
 
           <tr>
             <td>Lippukunta</td>
-            <td>Puskapartiolaiset</td>
+            <td>{vartio.lpk}</td>
           </tr>
 
           <tr>
             <td>Vartion numero</td>
-            <td>1340</td>
+            <td>{vartio.vartionro}</td>
           </tr>
 
           <tr>
             <td>Lähtöaika</td>
-            <td>8:10</td>
+            <td>{vartio.lahtoaika}</td>
           </tr>
         </tbody>
       </table>
