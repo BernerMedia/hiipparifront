@@ -43,41 +43,40 @@ export default function Kirje(props) {
           <View style={styles.view}>
             <Text style={styles.text}>Hei {vartio.vartio}!</Text>
             <Text style={styles.text}>
-              Mahtavaa, että olette mukana Hiipivässä Haamussa! Tässä kisakirjeessä on tärkeitä
-              ohjeita kisaan valmistautumiseen.
+            Superii, että olette mukana Hiipivässä Haamussa! Tässä kisakirjeessä on tärkeitä ohjeita kisaan valmistautumiseen.
             </Text>
             <Text style={styles.text}>
               <Text style={styles.boldFont}>Kilpailun lähtö</Text> tapahtuu perinteiseen tapaan
-              elokuvateatteri Orionilta osoitteessa Eerikinkatu 15. Vartionne lähtöaika on klo
+              elokuvateatteri Orionilta osoitteessa Eerikinkatu 15, 00100 Helsinki. Vartionne lähtöaika on klo
               {vartio.lahtoaika}. Tulkaa paikalle 15 minuuttia ennen lähtöaikaa.
             </Text>
             <Text style={styles.text}>
-              <Text style={styles.boldFont}>Kilpailun ennakkotehtävät</Text> voitte ladata
+              <Text style={styles.boldFont}>Kilpailun ennakkotehtävät</Text> voi ladata
               osoitteesta{' '}
               <Link src="http://hh.ilvesveikot.fi/tiedostot">
                 <Text>hh.ilvesveikot.fi/tiedostot</Text>
               </Link>
               . Täyttäkää tehtävän sivut siististi käsin tai tietokoneella, tulostakaa kaikki sivut
-              ja nitokaa ne nätiksi nipuksi. Tuokaa tehtävät kisan lähtöön. Varmistakaa vielä, että
+              ja nitokaa ne nätiksi nipuksi vasemmasta yläreunasta. Tuokaa tehtävät kisan lähtöön. Varmistakaa vielä, että
               vartion nimi ja numero on merkitty jokaiselle sivulle. Kisan nettisivuilta löytyy myös
               kilpailun{' '}
-              <Link src="https://youtu.be/Fw33UvpPiFE">
+              <Link src="https://www.youtube.com/watch?v=jqqw1nZ43Vk">
                 <Text>ennakkovideo</Text>
               </Link>
               , muistakaa katsoa sekin!
             </Text>
             <Text style={styles.text}>
-              Kilpailun <Text style={styles.boldText}>pukeutumisteema</Text> on hirviö. Tulkaa
+              Kilpailun <Text style={styles.boldText}>pukeutumisteema</Text> on Spektaakkeli. Kiehtovaa! Tulkaa
               lähtöön pukeutuneena kisa-asuihinne. Kisa-asuissa ollaan koko kisan ajan, joten niiden
               kannattaa olla myös sään mukaisia. Muistakaa, että asut arvioidaan ja niistä saa
-              pisteitä kilpailussa. Jep, jätesäkki asuna = 0 pistettä.
+              pisteitä kilpailussa. HOX, jätesäkki asuna = 0 pistettä.
             </Text>
             <Text style={styles.text}>
               Vartionne tulee valmistaa <Text style={styles.boldText}>kyltti</Text>, jossa näkyy
-              selvästi vartionne numero. Koska pukeutumisteema on hirviö, on reilua, että sitä
-              tasapainotetaan mahdollisimman kauniisti koristellulla kyltillä. Kyltin kirjaimen ja
-              numeroiden on oltava vähintään 19,47 cm korkeita. Lisäksi kyltissä pitää lukea
-              jollakin tapaa ja haluamallanne koolla #Hiippari22, tyyli on vapaa.
+              selvästi vartionne numero. Koska pukeutumisteema on Spektaakkeli, on vain reilua, että kylttikin on yhtä spektaakkelinomainen kuin kantajansa.
+            KKyltin kirjaimien ja numeroiden on oltava vähintään 19,47 cm korkeita. 
+            Lisäksi kyltissä pitää lukea jollakin tapaa ja haluamallanne koolla #Hiippari22, tyyli on vapaa. 
+
             </Text>
             <Text style={styles.text}>
               <Text style={styles.boldText}>Muita ohjeita ja vinkkejä</Text> kisapäivään löytyy
@@ -117,6 +116,8 @@ export default function Kirje(props) {
             <Link src="https://hh.ilvesveikot.fi">
               <Text>hh.ilvesveikot.fi</Text>
             </Link>
+
+   
           </View>
         </Page>
       </Document>
