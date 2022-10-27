@@ -1,5 +1,5 @@
 const variables = {
-  baseUrl: 'http://localhost:3001/api'
+  baseUrl: 'https://hiippari-server.azurewebsites.net/api'
 };
 
 export default variables;
