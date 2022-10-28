@@ -57,7 +57,7 @@ HH22 johtoryhmä / HH75
 <a id='linkkik' target={'_blank'} href="https://hh.ilvesveikot.fi">hh.ilvesveikot.fi</a>
         </p>
 
-        <Taulukko id={"taulukkot"} vartioData={vartio} />
+        <Taulukko id={""} vartioData={vartio} />
 
       </div>
 
