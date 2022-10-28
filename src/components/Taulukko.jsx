@@ -1,31 +1,30 @@
 import React from 'react';
 
-export default function Taulukko(props) {
-  const vartio = props.vartioData;
+export default function Taulukko({vartioData, id}) {
   return (
-    <div className="table-container">
+    <div id={id} className="table-container">
       <table className="taulukko">
         <tbody>
           <tr></tr>
 
           <tr>
             <td>Vartion nimi</td>
-            <td>{vartio.vartio}</td>
+            <td>{vartioData.vartio}</td>
           </tr>
 
           <tr>
             <td>Lippukunta</td>
-            <td>{vartio.lpk}</td>
+            <td>{vartioData.lpk}</td>
           </tr>
 
           <tr>
             <td>Vartion numero</td>
-            <td>{vartio.vartionro}</td>
+            <td>{vartioData.vartionro}</td>
           </tr>
 
           <tr>
             <td>Lähtöaika</td>
-            <td>{vartio.lahtoaika}</td>
+            <td>{vartioData.lahtoaika}</td>
           </tr>
         </tbody>
       </table>
