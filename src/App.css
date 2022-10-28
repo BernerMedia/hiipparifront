@@ -8,6 +8,17 @@ body {
   background-color: #101925;
 }
 
+.hello {
+  padding-top: 300px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#etusivub {
+  padding: 12px 12px;
+}
+
 .table-container {
   margin-left: auto;
   margin-right: auto;
@@ -129,6 +140,11 @@ a {
     transform: rotate(360deg);
   }
 }
+
+button:hover a {
+  color: white;
+}
+
 
 button {
   background-color: #ffffff;
