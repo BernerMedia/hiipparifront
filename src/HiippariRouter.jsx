@@ -33,7 +33,7 @@ export default function HiippariRouter() {
           return (
             <Route
               key={i}
-              path={`/kirje/${vartio.tilaus}`}
+              path={`/kirje/${vartio.lpk_lyhenne}/${vartio.tilaus}`}
               element={<Kirje vartioData={vartio} />}
             />
           );
