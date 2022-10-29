@@ -61,7 +61,7 @@ HH22 johtoryhmä / HH75
 
       </div>
 
-      <button id='tietokonebutton' onClick={() => (window.location.href = `/kirje/${vartio.tilaus}`)}>
+      <button id='tietokonebutton' onClick={() => (window.location.href = `/kirje/${vartio.lpk_lyhenne}/${vartio.tilaus}`)}>
         Lataa kirje
       </button>
 
